@@ -3,17 +3,17 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_APIKEY,
-  authDomain: "prepnexa-ai.firebaseapp.com",
-  projectId: "prepnexa-ai",
-  storageBucket: "prepnexa-ai.firebasestorage.app",
-  messagingSenderId: "952526840044",
-  appId: "1:952526840044:web:8ccd5199b1c1c44292c5c9"
+  authDomain: "career-assessment-system-ef526.firebaseapp.com",
+  projectId: "career-assessment-system-ef526",
+  storageBucket: "career-assessment-system-ef526.firebasestorage.app",
+  messagingSenderId: "354866087843",
+  appId: "1:354866087843:web:511ffa28240c0756f5bc16"
 };
 
 const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
 
-const provider = new GoogleAuthProvider()
+const provider = new GoogleAuthProvider();
 
-export{auth, provider}
+export { auth, provider };
